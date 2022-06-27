@@ -21,6 +21,7 @@ import org.springframework.test.web.servlet.MockMvc;
 import org.springframework.util.StringUtils;
 
 import java.math.BigDecimal;
+import java.time.OffsetDateTime;
 import java.util.Optional;
 import java.util.UUID;
 
@@ -65,14 +66,14 @@ class BeerControllerTest {
                                 parameterWithName("isCold").description("Is Beer Cold Query Param")
                                          ),
                         responseFields(
-                                fieldWithPath("id").description("ID of the beer"),
-                                fieldWithPath("version").description("version of the beer"),
-                                fieldWithPath("createdDate").description("createdDate of the beer"),
-                                fieldWithPath("lastModifiedDate").description("lastModifiedDate of the beer"),
-                                fieldWithPath("beerName").description("beerName of the beer"),
+                                fieldWithPath("id").description("ID of the beer").type(UUID.class),
+                                fieldWithPath("version").description("version of the beer").type(String.class),
+                                fieldWithPath("createdDate").description("createdDate of the beer").type(OffsetDateTime.class),
+                                fieldWithPath("lastModifiedDate").description("lastModifiedDate of the beer").type(OffsetDateTime.class),
+                                fieldWithPath("beerName").description("beerName of the beer").type(String.class),
                                 fieldWithPath("beerStyle").description("beerStyle of the beer"),
                                 fieldWithPath("upc").description("upc of the beer"),
-                                fieldWithPath("price").description("price of the beer"),
+                                fieldWithPath("price").description("price of the beer").type(BigDecimal.class),
                                 fieldWithPath("quantityOnHand").description("quantityOnHand of the beer")
 
                         )));

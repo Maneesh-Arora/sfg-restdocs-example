@@ -444,7 +444,7 @@ documentation snippets.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://localhost:8080/api/v1/beer/f43fb1cc-7fed-4651-a869-6baa16f03cb1?isCold=yes' -i -X GET \
+<pre class="highlight"><code class="language-bash" data-lang="bash">$ curl 'https://localhost:8080/api/v1/beer/3f53a5d3-fd43-49bb-9f38-1e4416a3aeb1?isCold=yes' -i -X GET \
     -H 'Accept: application/json'</code></pre>
 </div>
 </div>
@@ -453,7 +453,7 @@ documentation snippets.</p>
 </div>
 <div class="listingblock">
 <div class="content">
-<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /api/v1/beer/f43fb1cc-7fed-4651-a869-6baa16f03cb1?isCold=yes HTTP/1.1
+<pre class="highlight nowrap"><code class="language-http" data-lang="http">GET /api/v1/beer/3f53a5d3-fd43-49bb-9f38-1e4416a3aeb1?isCold=yes HTTP/1.1
 Accept: application/json
 Host: localhost:8080</code></pre>
 </div>
@@ -497,27 +497,27 @@ Content-Type: application/json;charset=UTF-8
 <tbody>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>id</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>class java.util.UUID</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">ID of the beer</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>version</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>class java.lang.String</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">version of the beer</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>createdDate</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>class java.time.OffsetDateTime</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">createdDate of the beer</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>lastModifiedDate</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>class java.time.OffsetDateTime</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">lastModifiedDate of the beer</p></td>
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>beerName</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>class java.lang.String</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">beerName of the beer</p></td>
 </tr>
 <tr>
@@ -532,7 +532,7 @@ Content-Type: application/json;charset=UTF-8
 </tr>
 <tr>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>price</code></p></td>
-<td class="tableblock halign-left valign-top"><p class="tableblock"><code>Null</code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code>class java.math.BigDecimal</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">price of the beer</p></td>
 </tr>
 <tr>
